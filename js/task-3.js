@@ -1,7 +1,16 @@
 'use strict'
 
 const findBestEmployee = function(employees) {
-    // твой код
+  let maxNumberOfTasks = 0;
+  let BestEmployee;
+
+  for (const key in employees) {
+    if (maxNumberOfTasks < employees[key]) {
+      maxNumberOfTasks = employees[key];
+      BestEmployee = key;
+    }
+  }
+  return BestEmployee;
 };
   
 /*
