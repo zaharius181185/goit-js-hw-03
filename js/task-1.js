@@ -7,6 +7,18 @@ const user = {
     premium: true,
 };
 
+user.mood = 'happy';
+user.hobby = 'skydiving';
+user.premium = false;
+
+const entries = Object.entries(user);
+
+for (const record of entries) {
+    const key = record [0];
+    const value = record [1];
+
+    console.log(`${key}: ${value}`);
+}
 
 
 
