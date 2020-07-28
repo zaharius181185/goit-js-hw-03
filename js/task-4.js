@@ -1,7 +1,11 @@
 'use strict'
 
 const countTotalSalary = function(employees) {
-    // твой код
+  let sum = 0;
+  for (const key in employees) {
+    sum += employees[key];
+  }
+  return sum;
 };
   
 /*

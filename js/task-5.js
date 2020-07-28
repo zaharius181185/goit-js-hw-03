@@ -8,7 +8,13 @@ const products = [
 ];
   
 const getAllPropValues = function(arr, prop) {
-    // твой код
+    const value = [];
+    for (const product of arr) {
+      if (prop in product) {
+        value.push(product[prop]);
+      }
+    }
+    return value;
 };
   
 /*
