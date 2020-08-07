@@ -11,15 +11,11 @@ user.mood = 'happy';
 user.hobby = 'skydiving';
 user.premium = false;
 
-const entries = Object.entries(user);
+const keys = Object.keys(user);
 
-for (const record of entries) {
-    const key = record [0];
-    const value = record [1];
-
-    console.log(`${key}: ${value}`);
+for (const key of keys) {
+    console.log(`${key}: ${user[key]}`);
 }
-
 
 
 
